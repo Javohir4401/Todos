@@ -9,9 +9,17 @@ $router = new Router();
 $todo = new Todo();
 
 $router->get('/', function () {
-    view('rout');
+    header('Location: /todos');
 });
- 
+
+$router->get('/edit', function () {
+    view('edit');
+});
+
+$router->get('/todos/{id}/edit', function ($todoId) {
+    echo 'Edit the task: ' . $todoId;
+});
+
 $router->get('/todos', function () use ($todo) {
     $todos = $todo->getAllTodos();
     view('home', ['todos' => $todos]);
@@ -24,21 +32,23 @@ $router->post('/todos', function () use ($todo) {
     }
 });
 
-$router->get('/complete/{id}', function ($todoId) use ($todo) {
-        $todo->complete($todoId);
-        header('Location: /todos');
-        exit();
-    }
-);
+$router->get('/todos/{id}/complete', function ($todoId) use ($todo) {
+    $todo->complete($todoId);
+    header('Location: /todos');
+    exit();
+});
 
-$router->get('/in-progress/{id}', function ($todoId) use ($todo) {
-        $todo->inProgress($todoId);
-        header('Location: /todos');
-    }
-);
+$router->get('/todos/{id}/in-progress', function ($todoId) use ($todo) {
+    $todo->inProgress($todoId);
+    header('Location: /todos');
+});
 
-$router->get('/pending/{id}', function ($todoId) use ($todo) {
-        $todo->pending($todoId);
-        header('Location: /todos');
-    }
-);
+$router->get('/todos/{id}/pending', function ($todoId) use ($todo) {
+    $todo->pending($todoId);
+    header('Location: /todos');
+});
+
+$router->get('/todos/{id}/delete', function ($todoId) use ($todo) {
+    $todo->destroy($todoId);
+    redirect('/todos');
+});

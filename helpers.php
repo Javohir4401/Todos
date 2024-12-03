@@ -5,3 +5,6 @@ function view (string $page, array $data = []) {
     require 'views/' . $page . '.php';
 }
 
+function redirect (string $url) {
+    header('Location: ' . $url);
+}
