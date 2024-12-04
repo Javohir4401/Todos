@@ -8,6 +8,17 @@ $router = new Router();
 
 $todo = new Todo();
 
+$router->put('/todos/{id}/update', function ($todoId) use($todo){
+    var_dump($_POST);
+    $todo->update(
+        $todoId,
+        $_POST['title'],
+        $_POST['status'],
+        $_POST['due_date']
+    );
+    redirect('/todos');
+});
+
 $router->get('/todos/{id}/edit', function ($todoId) use($todo){
     echo 'Edit the task: ' . $todoId;
     $getTodo = $todo->getTodo($todoId);
