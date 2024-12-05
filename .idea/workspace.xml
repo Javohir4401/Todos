@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3e41368-342a-4a39-8df6-89a42038de00" name="Changes" comment="" />
+    <list default="true" id="5bd4bf99-bf4d-419c-8aa0-159279d1a8d8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +21,7 @@
   "customColor": "",
   "associatedIndex": 8
 }]]></component>
-  <component name="ProjectId" id="2pkiHvryVRy8YssZib57O27o0EV" />
+  <component name="ProjectId" id="2pnTmjvq6mC8Y16XvGl1dWP0zAC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,12 +29,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -54,12 +54,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d3e41368-342a-4a39-8df6-89a42038de00" name="Changes" comment="" />
-      <created>1733316392804</created>
+      <changelist id="5bd4bf99-bf4d-419c-8aa0-159279d1a8d8" name="Changes" comment="" />
+      <created>1733401002257</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1733316392804</updated>
-      <workItem from="1733316395017" duration="6056000" />
+      <updated>1733401002257</updated>
+      <workItem from="1733401004085" duration="7637000" />
     </task>
     <servers />
   </component>

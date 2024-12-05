@@ -1,5 +1,7 @@
 <?php
 
+require 'bootstrap.php';
+
 require 'src/Todo.php';
 require 'helpers.php';
 require 'src/Router.php';
@@ -9,7 +11,6 @@ $router = new Router();
 $todo = new Todo();
 
 $router->put('/todos/{id}/update', function ($todoId) use($todo){
-    var_dump($_POST);
     $todo->update(
         $todoId,
         $_POST['title'],
@@ -20,7 +21,6 @@ $router->put('/todos/{id}/update', function ($todoId) use($todo){
 });
 
 $router->get('/todos/{id}/edit', function ($todoId) use($todo){
-    echo 'Edit the task: ' . $todoId;
     $getTodo = $todo->getTodo($todoId);
     view('edit', [
         'todo'=>$getTodo
