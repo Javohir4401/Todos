@@ -2,64 +2,33 @@
 
 require 'bootstrap.php';
 
-require 'src/Todo.php';
+use App\Todo;
+use App\Router;
+
 require 'helpers.php';
-require 'src/Router.php';
 
 $router = new Router();
-
 $todo = new Todo();
 
-$router->put('/todos/{id}/update', function ($todoId) use($todo){
-    $todo->update(
-        $todoId,
-        $_POST['title'],
-        $_POST['status'],
-        $_POST['due_date']
-    );
-    redirect('/todos');
-});
+$router->get('/', fn () => require 'src/controllers/homecontrollers.php');
 
-$router->get('/todos/{id}/edit', function ($todoId) use($todo){
-    $getTodo = $todo->getTodo($todoId);
-    view('edit', [
-        'todo'=>$getTodo
-    ]);
-});
+$router->get('/todos', fn() => require 'src/controllers/getTodocontrollers.php');
 
-$router->get('/', function () {
-    view('home');
-});
+$router->put('/todos/{id}/update', fn ($todoId) => require 'src/controllers/updateTodocontrollers.php');
 
-$router->get('/todos', function () use ($todo) {
-    $todos = $todo->getAllTodos();
-    view('todos', ['todos' => $todos]);
-});
+$router->get('/todos/{id}/edit', fn ($todoId) => require 'src/controllers/editTodocontrollers.php');
+
+$router->get('/todos/{id}/complete', fn ($todoId) => require 'src/controllers/complatecontrollers.php');
+
+$router->get('/todos/{id}/in-progress', fn ($todoId) => require 'src/controllers/inprogrescontrollers.php');
+
+$router->get('/todos/{id}/pending', fn ($todoId) => require 'src/controllers/pandingcontrollers.php');
+
+$router->get('/todos/{id}/delete', fn ($todoId) => require 'src/controllers/delatecontrollers.php');
 
 $router->post('/todos', function () use ($todo) {
     if (!empty($_POST['title']) && !empty($_POST['due_date'])) {
         $todo->store($_POST['title'], $_POST['due_date']);
         redirect('/todos');
     }
-});
-
-$router->get('/todos/{id}/complete', function ($todoId) use ($todo) {
-    $todo->complete($todoId);
-    redirect('/todos');
-    exit();
-});
-
-$router->get('/todos/{id}/in-progress', function ($todoId) use ($todo) {
-    $todo->inProgress($todoId);
-    redirect('/todos');
-});
-
-$router->get('/todos/{id}/pending', function ($todoId) use ($todo) {
-    $todo->pending($todoId);
-    redirect('/todos');
-});
-
-$router->get('/todos/{id}/delete', function ($todoId) use($todo){
-    $todo->destroy($todoId);
-    redirect('/todos');
 });
