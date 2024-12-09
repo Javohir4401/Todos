@@ -4,23 +4,82 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bd4bf99-bf4d-419c-8aa0-159279d1a8d8" name="Changes" comment="" />
+    <list default="true" id="5bd4bf99-bf4d-419c-8aa0-159279d1a8d8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/views/componentes/navbar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Todos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Todos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/complatecontrollers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/complatecontrollers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/delatecontrollers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/delatecontrollers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/editTodocontrollers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/editTodocontrollers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/getTodocontrollers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/getTodocontrollers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/homecontrollers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/homecontrollers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/inprogrescontrollers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/inprogrescontrollers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/pandingcontrollers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/pandingcontrollers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/updateTodocontrollers.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/updateTodocontrollers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/componentes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/componentes/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/componentes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/componentes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/todos.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/todos.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Javohir4401&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Javohir4401/Todos.git&quot;,
+    &quot;accountId&quot;: &quot;4633917b-f535-4e83-939f-7091c200b95d&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/views/home.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/larapack/dd" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2pnTmjvq6mC8Y16XvGl1dWP0zAC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,12 +88,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -43,6 +104,13 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\my file\Todos\views\componentes" />
+      <recent name="C:\xampp\htdocs\my file\Todos\views" />
+      <recent name="C:\xampp\htdocs\my file\Todos" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -60,6 +128,8 @@
       <option name="presentableId" value="Default" />
       <updated>1733401002257</updated>
       <workItem from="1733401004085" duration="40043000" />
+      <workItem from="1733548879796" duration="5910000" />
+      <workItem from="1733748766991" duration="9804000" />
     </task>
     <servers />
   </component>

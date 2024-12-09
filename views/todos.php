@@ -78,6 +78,8 @@ require "views/componentes/header.php";
         </div>
     </div>
 </div>
-<?php
-require "views/componentes/footer.php";
-?>
+<div style="position: fixed; width: 100%; bottom: 0; ">
+    <?php
+    require 'views/componentes/footer.php';
+    ?>
+</div>
