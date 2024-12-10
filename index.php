@@ -30,9 +30,4 @@ $router->get('/todos/{id}/pending', fn ($todoId) => require 'controllers/panding
 
 $router->get('/todos/{id}/delete', fn ($todoId) => require 'controllers/delatecontrollers.php');
 
-$router->post('/todos', function () use ($todo) {
-    if (!empty($_POST['title']) && !empty($_POST['due_date'])) {
-        $todo->store($_POST['title'], $_POST['due_date']);
-        redirect('/todos');
-    }
-});
+$router->post('/todos', fn () => require  );
